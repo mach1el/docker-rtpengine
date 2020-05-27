@@ -33,9 +33,9 @@ RUN dpkg -i ngcp-rtpengine-daemon_*.deb ngcp-rtpengine-recording-daemon_*.deb ng
 
 WORKDIR /
 RUN rm -rf /tmp/*
-RUN mkdir -p /recording
 RUN mkdir -p /etc/rtpengine/
 RUN mkdir -p /var/spool/rtpengine
+RUN mkdir -p /var/lib/rtpengine-recording
 
 ENV TABLE=0
 COPY cfg/rtpengine.conf /etc/rtpengine/
