@@ -1,0 +1,4 @@
+#!/bin/bash
+set -m
+
+exec /usr/sbin/rtpengine-recording --config-file=/etc/rtpengine/rtpengine-recording.conf
