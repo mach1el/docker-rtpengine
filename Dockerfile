@@ -8,6 +8,9 @@ RUN apt-get update && \
   curl \
   wget \
   ca-certificates \
+  runit \
+  procps \
+  parallel \
   gnupg2 \
   dirmngr \
   debhelper \
@@ -75,6 +78,9 @@ COPY cfg/rtpengine.conf /etc/rtpengine/
 COPY cfg/rtpengine-recording.conf /etc/rtpengine/
 
 ADD units /
+RUN ln -s /etc/sv/* /etc/service
+
 COPY init.sh /init.sh
 RUN chmod +x /init.sh
+
 ENTRYPOINT ["/init.sh"]
