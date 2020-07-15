@@ -1,6 +1,7 @@
 # RTPengine on docker
 ![license](https://img.shields.io/github/license/mach1el/docker-rtpengine?color=pink&style=plastic)
 ![Size](https://img.shields.io/github/repo-size/mach1el/docker-rtpengine?style=plastic)
+![imgsize](https://img.shields.io/docker/image-size/mich43l/rtpengine?color=grey&style=plastic)
 
 RTPengine server for streaming RTP on SIP proxy/server such as: [Opensips](https://www.opensips.org/),[Kamailio](https://www.kamailio.org/w/)...
 Builded on [debian buster](https://www.debian.org/releases/buster/)
