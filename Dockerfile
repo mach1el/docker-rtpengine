@@ -76,5 +76,5 @@ COPY cfg/rtpengine-recording.conf /etc/rtpengine/
 
 ADD units /
 COPY init.sh /init.sh
-chmod +x /init.sh
+RUN chmod +x /init.sh
 ENTRYPOINT ["/init.sh"]
